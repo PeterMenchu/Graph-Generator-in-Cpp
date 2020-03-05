@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/peter/Documents/Peter's Programs/Graph Generator/graphgen.cpp
+graphgen.h
+/Users/peter/Documents/Peter's Programs/Graph Generator/graphgen.h
+
+/Users/peter/Documents/Peter's Programs/Graph Generator/graphgen.h
+iostream
+-
+cstdlib
+-
+ctime
+-
+fstream
+-
+string
+-
+cstring
+-
+
+/Users/peter/Documents/Peter's Programs/Graph Generator/main.cpp
+iostream
+-
+graphgen.h
+/Users/peter/Documents/Peter's Programs/Graph Generator/graphgen.h
+
