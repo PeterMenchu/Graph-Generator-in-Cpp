@@ -1,7 +1,7 @@
 // Peter Menchu 2018 (revised in 2020)
 // Program that creates directed or undirected graphs
 #include "graphgen.h"
-void generateDir(ofstream& fout, int v){
+void Graph::generateDir(ofstream& fout, int v){
 	// randomize each edge weight value, 0 is no edge
         for (int i = 0; i < v; i++){
                 fout << endl;
@@ -17,7 +17,7 @@ void generateDir(ofstream& fout, int v){
         return;
 }
 
-void generateUndir(ofstream& fout, int v){
+void Graph::generateUndir(ofstream& fout, int v){
 	// randomize each i,j pair only once and set j,i to the same value
         int graph[v][v];
         memset(graph, -1, sizeof(graph));

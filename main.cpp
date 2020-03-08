@@ -5,6 +5,8 @@
 
 using namespace std;
 int main() {
+    // declare a graph
+    Graph newGraph;
     srand (time(nullptr)); // seed for rand
     int v; //# of vertices
     int graphcount = 0;// # graphs to generate
@@ -34,13 +36,13 @@ int main() {
     if (type == 'd'){// directed graphs
         for (int i = 0; i < graphcount; i++){
             //memset(graph, -1, sizeof(graph));
-            generateDir(fout, v);
+            newGraph.generateDir(fout, v);
         }
     } else {// undirected graphs
         //int graph[v][v];
         for (int i = 0; i < graphcount; i++){
             //memset(graph, -1, sizeof(graph));
-            generateUndir(fout, v);
+            newGraph.generateUndir(fout, v);
         }
 
     }

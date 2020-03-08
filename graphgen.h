@@ -12,10 +12,16 @@
 #include <cstring>
 using namespace std;
 
-// generates directed graphs
-void generateDir(ofstream& fout, int v);
-// generates undirected graphs
-void generateUndir(ofstream& fout, int v);
+class Graph{
+    private:
+
+    public:
+        // generates directed graphs
+        void generateDir(ofstream& fout, int v);
+        // generates undirected graphs
+        void generateUndir(ofstream& fout, int v);
+};
+
 
 
 #endif //GRAPH_GENERATOR_GRAPHGEN_H
